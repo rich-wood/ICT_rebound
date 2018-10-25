@@ -1,0 +1,16 @@
+# ICT_rebound
+Code for replication of a study on scenarios of ICT consumption in EU and Sweden
+
+
+Based on paper submitted to Journal of Cleaner Production:
+
+
+A multi-impact analysis of changing ICT consumption patterns for Sweden and the EU: Indirect rebound effects and evidence of decoupling
+P. James Joyce1*, Göran Finnveden1, Cecilia Håkansson1 and Richard Wood2
+1.	Department of Sustainable Development, Environmental Science and Engineering (SEED), KTH Royal Institute of Technology, Stockholm SE 100-44, Sweden
+2.	Department of Energy and Process Engineering, Norwegian University of Science and Technology, 7491 Trondheim, Norway
+* Corresponding author - email: pjjoyce@kth.se, telephone: +46-73-765 22 01
+
+
+Abstract
+Information and Communication Technology (ICT) is one of the major areas of growth in consumption seen over the last two decades. The falling prices of ICT and increasing energy efficiency of ICT may lead to reduced spending on ICT and electricity in the future. However, lower spending in one area can trigger higher spending elsewhere, leading to ‘rebound effects’ which can reduce or even cancel out the environmental benefits associated with lower consumption of a given product or service, and reducing the efficacy of environmental policy. In this study we use Multi-Regional Input Output analysis to investigate trends in the consumption of, and environmental and social impacts associated with ICT products in Sweden and the EU. We find that ICT spending is linked to prosperity, with a clear fall as a result of the 2008 financial crisis, but a recovery since. There is some evidence that the environmental impact associated with ICT has begun to decouple from consumption in Sweden, but not at an EU level. Environmental rebound effects associated with reduced ICT consumption are strong – close to, and in most cases far above 100% (so called backfire effects). This backfire effect is strongest for energy use and total material footprint, which are both close to 200% in Sweden. This means that an increased spending on ICT products and services while keeping the overall consumption level constant, would decrease environmental impacts. Environmental rebound effects are much lower for reduced energy spending (as low as 2 percent), particularly at an EU level.  Rebound effects in social indicators are assessed for the first time for ICT products. We find that value added in the EU is relatively insensitive to changes in spending patterns related to ICT and energy (rebound effects ~100%), however rebound effects in employment are seen, particularly resulting from decreased energy spending. At an EU level, reallocation of spending resulting from lower energy consumption results in a net increase in employment, while in Sweden the reverse is true. We conclude that policies focused on reducing energy spending are likely to have a greater overall environmental effect than measures which result in reduced consumer spending on ICT. However, in light of the conflicting social rebound effects at an EU and Swedish level, the importance of understanding the broader consequences of policy decision across a broad range of measures in advance of their implementation is once again highlighted.
