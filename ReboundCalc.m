@@ -72,14 +72,15 @@ yr_range=1995:2011
 % yr_range=2011
 
 %% load the background data
-loaddata=0 %only if on NTNU servers, or with access to compiled files to be loaded, otherwise skip, and load pre-loaded multipliers/demand
+loaddata=1 %only if on NTNU servers, or with access to compiled files to be loaded, otherwise skip, and load pre-loaded multipliers/demand
 if loaddata==1
+% mriodatapath=... % add location of data files (for paper, exio3.3 constant price used
 % here we just extract the total footprint and total expenditure by product
 % and region from EXIOBASE data, it is saved in Qy_ts.mat
     for yr=yr_range
         yrcnt=yr-min(yr_range)+1
-        load(['\\felles.ansatt.ntnu.no\ivt\indecol\Projects\MRIOs\EXIOBASE3\EXIOBASE_3_3_constant_price\Analysis\data\Q',num2str(yr),'.mat'],'Q10','F')
-        load(['\\felles.ansatt.ntnu.no\ivt\indecol\Projects\MRIOs\EXIOBASE3\EXIOBASE_3_3_constant_price\Analysis\data\macro',num2str(yr),'.mat'],'macro')
+        load([mriodatapath,'\Analysis\data\Q',num2str(yr),'.mat'],'Q10','F')
+        load([mriodatapath,'\Analysis\data\macro',num2str(yr),'.mat'],'macro')
         for reg=1:2
             % total impacts and expenditures for region:
             if reg==1
@@ -98,14 +99,16 @@ else % otherwise load pre-loaded multipliers/demand:
 end
 
 
-%%
+%% calculation stage:
+
+%% choice of respending vector, as per methods, if income elascities of demand are available, preferable to use, otherwise use averagre re-expenditure.
 disp(' currently respending by average expenditure')
 % for marginal in 2010
-% load('\\felles.ansatt.ntnu.no\ivt\indecol\Projects\MRIOs\IncomeGrowth\Country Specific Consumption Forecasting Scenario\Results\NoDistribution_LogLog\Engel_Curves_Regressions.mat')
+% load('\MRIOs\IncomeGrowth\Country Specific Consumption Forecasting Scenario\Results\NoDistribution_LogLog\Engel_Curves_Regressions.mat')
 % respend_vector=Engel_Curves.Shares.SE/sum(Engel_Curves.Shares.SE);
 
 
-
+%%
 for yr=yr_range
     yrcnt=yr-min(yr_range)+1
     for reg=1:2 % we loop over EU and Sweden for results
